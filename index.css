@@ -1,0 +1,47 @@
+body  {
+   background-image:url(https://wallpaperaccess.com/full/1567736.png);
+   background-repeat: no-repeat;
+   height:100vh;
+   
+}
+.container{
+    height:80%;
+    width:60%;
+    margin: auto;
+}
+
+.card.card-body{
+    height:70%;
+    width:70%;
+    margin-left:20px;
+    margin-right:20px;
+    background: #8DD8A8 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000002B;
+    border-radius: 20px;
+    opacity: 1;
+}
+
+
+
+div.card.card-body button.btn{
+    background: #238d4a;
+    color: white;
+    border-radius:16px;
+    width:44%;
+    border:none;
+    box-shadow: 0px 3px 10px #00000047;
+}
+div.col-10 input,textarea :hover{
+    background-color:#b9ffd3;
+}
+
+input.input-100{
+    border:none;
+}
+
+a.anchor{
+ text-decoration: none;
+ color:#238d4a;
+ 
+
+}

@@ -1,0 +1,1131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Analytics Dashboard - This is an example dashboard created using build-in elements and components.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no" />
+    <meta name="description" content="This is an example dashboard created using build-in elements and components.">
+    <meta name="msapplication-tap-highlight" content="no">
+    <!--
+    =========================================================
+    * ArchitectUI HTML Theme Dashboard - v1.0.0
+    =========================================================
+    * Product Page: https://dashboardpack.com
+    * Copyright 2019 DashboardPack (https://dashboardpack.com)
+    * Licensed under MIT (https://github.com/DashboardPack/architectui-html-theme-free/blob/master/LICENSE)
+    =========================================================
+    * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+    -->
+<link href="./main.css" rel="stylesheet"></head>
+<link rel="stylesheet" href="./css/post.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<body>
+    <div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+        <div class="app-header header-shadow">
+            <div class="app-header__logo">
+                <div class="logo-src"></div>
+                <div class="header__pane ml-auto">
+                    <div>
+                        <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="app-header__mobile-menu">
+                <div>
+                    <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="app-header__menu">
+                <span>
+                    <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                        <span class="btn-icon-wrapper">
+                            <i class="fa fa-ellipsis-v fa-w-6"></i>
+                        </span>
+                    </button>
+                </span>
+            </div>    <div class="app-header__content">
+                <div class="app-header-left">
+                    <div class="search-wrapper">
+                        <div class="input-holder">
+                            <input type="text" class="search-input" placeholder="Type to search">
+                            <button class="search-icon"><span></span></button>
+                        </div>
+                        <button class="close"></button>
+                    </div>
+                    <ul class="header-menu nav">
+                      
+                        <li class="btn-group nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-edit"></i>
+                                Projects
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item">
+                            <a href="javascript:void(0);" class="nav-link">
+                                <i class="nav-link-icon fa fa-cog"></i>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>        </div>
+                <div class="app-header-right">
+                    <button style=" width: 40px;
+                    height:40px;
+                    border-radius:100%;
+                    line-height: 35px;
+                    margin-right:5px;;
+                    font-size: 0.9rem;" class="btn btn-success btn-circle btn-circle-sm d-flex justify-content-center align-items-center"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+</svg></button>
+                    <div class="header-btn-lg pr-0">
+                        <div class="widget-content p-0">
+                            <div class="widget-content-wrapper">
+                                <div class="widget-content-left">
+                                    <div class="btn-group">
+                                        <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
+                                            <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                            <i class="fa fa-angle-down ml-2 opacity-8"></i>
+                                        </a>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <button type="button" tabindex="0" class="dropdown-item">User Account</button>
+                                            <button type="button" tabindex="0" class="dropdown-item">Settings</button>
+                                            <h6 tabindex="-1" class="dropdown-header">Header</h6>
+                                            <button type="button" tabindex="0" class="dropdown-item">Actions</button>
+                                            <div tabindex="-1" class="dropdown-divider"></div>
+                                            <button type="button" tabindex="0" class="dropdown-item">Dividers</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-content-left  ml-3 header-user-info">
+                                    <div class="widget-heading">
+                                        Alina Mclourd
+                                    </div>
+                                    <div class="widget-subheading">
+                                        VP People Manager
+                                    </div>
+                                </div>
+                                <div class="widget-content-right header-user-info ml-3">
+                                    <button type="button" class="btn-shadow p-1 btn btn-primary btn-sm show-toastr-example">
+                                        <i class="fa text-white fa-calendar pr-1 pl-1"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>        </div>
+            </div>
+        </div>        <div class="ui-theme-settings">
+            <button type="button" id="TooltipDemo" class="btn-open-options btn btn-warning">
+                <i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </button>
+            <div class="theme-settings__inner">
+                <div class="scrollbar-container">
+                    <div class="theme-settings__options-wrapper">
+                        <h3 class="themeoptions-heading">Layout Options
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-header">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Header
+                                                </div>
+                                                <div class="widget-subheading">Makes the header top fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-sidebar">
+                                                    <div class="switch-animate switch-on">
+                                                        <input type="checkbox" checked data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Sidebar
+                                                </div>
+                                                <div class="widget-subheading">Makes the sidebar left fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="widget-content p-0">
+                                        <div class="widget-content-wrapper">
+                                            <div class="widget-content-left mr-3">
+                                                <div class="switch has-switch switch-container-class" data-class="fixed-footer">
+                                                    <div class="switch-animate switch-off">
+                                                        <input type="checkbox" data-toggle="toggle" data-onstyle="success">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left">
+                                                <div class="widget-heading">Fixed Footer
+                                                </div>
+                                                <div class="widget-subheading">Makes the app footer bottom fixed, always visible!
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>
+                                Header Options
+                            </div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-header-cs-class" data-class="bg-secondary header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-header-cs-class" data-class="bg-success header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-header-cs-class" data-class="bg-info header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-header-cs-class" data-class="bg-warning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-header-cs-class" data-class="bg-danger header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-header-cs-class" data-class="bg-light header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-header-cs-class" data-class="bg-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-header-cs-class" data-class="bg-focus header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-header-cs-class" data-class="bg-alternate header-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Sidebar Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
+                                Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Choose Color Scheme
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-secondary switch-sidebar-cs-class" data-class="bg-secondary sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-success switch-sidebar-cs-class" data-class="bg-success sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-info switch-sidebar-cs-class" data-class="bg-info sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-warning switch-sidebar-cs-class" data-class="bg-warning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-danger switch-sidebar-cs-class" data-class="bg-danger sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-light switch-sidebar-cs-class" data-class="bg-light sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-dark switch-sidebar-cs-class" data-class="bg-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-focus switch-sidebar-cs-class" data-class="bg-focus sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-alternate switch-sidebar-cs-class" data-class="bg-alternate sidebar-text-light">
+                                        </div>
+                                        <div class="divider">
+                                        </div>
+                                        <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
+                                        </div>
+                                        <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <h3 class="themeoptions-heading">
+                            <div>Main Content Options</div>
+                            <button type="button" class="btn-pill btn-shadow btn-wide ml-auto active btn btn-focus btn-sm">Restore Default
+                            </button>
+                        </h3>
+                        <div class="p-3">
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h5 class="pb-2">Page Section Tabs
+                                    </h5>
+                                    <div class="theme-settings-swatches">
+                                        <div role="group" class="mt-2 btn-group">
+                                            <button type="button" class="btn-wide btn-shadow btn-primary btn btn-secondary switch-theme-class" data-class="body-tabs-line">
+                                                Line
+                                            </button>
+                                            <button type="button" class="btn-wide btn-shadow btn-primary active btn btn-secondary switch-theme-class" data-class="body-tabs-shadow">
+                                                Shadow
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        <div class="app-main">
+                <div class="app-sidebar sidebar-shadow">
+                    <div class="app-header__logo">
+                        <div class="logo-src"></div>
+                        <div class="header__pane ml-auto">
+                            <div>
+                                <button type="button" class="hamburger close-sidebar-btn hamburger--elastic" data-class="closed-sidebar">
+                                    <span class="hamburger-box">
+                                        <span class="hamburger-inner"></span>
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-header__mobile-menu">
+                        <div>
+                            <button type="button" class="hamburger hamburger--elastic mobile-toggle-nav">
+                                <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="app-header__menu">
+                        <span>
+                            <button type="button" class="btn-icon btn-icon-only btn btn-primary btn-sm mobile-toggle-header-nav">
+                                <span class="btn-icon-wrapper">
+                                    <i class="fa fa-ellipsis-v fa-w-6"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </div>    <div class="scrollbar-sidebar">
+                        <div class="app-sidebar__inner">
+                            <ul class="vertical-nav-menu">
+                                <li class="app-sidebar__heading">Dashboards</li>
+                                <li>
+                                    <a href="index.html" class="mm-active">
+                                        <i class="fa fa-home"></i>
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PROFILE</li>
+                                <li>
+                                    <a href="Profile.html">
+                                        <i class="fa fa-user"></i>
+                                        My Profile
+                                       
+                                    </a>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                
+                                    
+                                <li class="app-sidebar__heading">Widgets</li>
+                                <li>
+                                    <a href="dashboard-boxes.html">
+                                        <i class="metismenu-icon pe-7s-display2"></i>
+                                        Dashboard Boxes
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Forms</li>
+                                <li>
+                                    <a href="forms-controls.html">
+                                        <i class="metismenu-icon pe-7s-mouse">
+                                        </i>Forms Controls
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="forms-layouts.html">
+                                        <i class="metismenu-icon pe-7s-eyedropper">
+                                        </i>Forms Layouts
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="forms-validation.html">
+                                        <i class="metismenu-icon pe-7s-pendrive">
+                                        </i>Forms Validation
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">Charts</li>
+                                <li>
+                                    <a href="charts-chartjs.html">
+                                        <i class="metismenu-icon pe-7s-graph2">
+                                        </i>ChartJS
+                                    </a>
+                                </li>
+                                <li class="app-sidebar__heading">PRO Version</li>
+                                <li>
+                                    <a href="https://dashboardpack.com/theme-details/architectui-dashboard-html-pro/" target="_blank">
+                                        <i class="metismenu-icon pe-7s-graph2">
+                                        </i>
+                                        Upgrade to PRO
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    <div class="app-main__outer">
+                    <div class="app-main__inner">
+                        <div class="app-page-title">
+                            <div class="page-title-wrapper">
+                                <div class="page-title-heading">
+                                    <div class="page-title-icon">
+                                        <i class="pe-7s-car icon-gradient bg-mean-fruit">
+                                        </i>
+                                    </div>
+                                    <div>Analytics Dashboard
+                                        <div class="page-title-subheading">This is an example dashboard created using build-in elements and components.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="page-title-actions">
+                                    <button type="button" data-toggle="tooltip" title="Example Tooltip" data-placement="bottom" class="btn-shadow mr-3 btn btn-dark">
+                                        <i class="fas fa-envelope-open"></i>
+                                    </button>
+                                    <div class="d-inline-block dropdown">
+                                        <button type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="btn-shadow dropdown-toggle btn btn-info">
+                                            <span class="btn-icon-wrapper pr-2 opacity-7">
+                                                <i class="fa fa-business-time fa-w-20"></i>
+                                            </span>
+                                            Buttons
+                                        </button>
+                                        <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item">
+                                                    <a href="javascript:void(0);" class="nav-link">
+                                                        <i class="nav-link-icon lnr-inbox"></i>
+                                                        <span>
+                                                            Inbox
+                                                        </span>
+                                                        <div class="ml-auto badge badge-pill badge-secondary">86</div>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="javascript:void(0);" class="nav-link">
+                                                        <i class="nav-link-icon lnr-book"></i>
+                                                        <span>
+                                                            Book
+                                                        </span>
+                                                        <div class="ml-auto badge badge-pill badge-danger">5</div>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a href="javascript:void(0);" class="nav-link">
+                                                        <i class="nav-link-icon lnr-picture"></i>
+                                                        <span>
+                                                            Picture
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a disabled href="javascript:void(0);" class="nav-link disabled">
+                                                        <i class="nav-link-icon lnr-file-empty"></i>
+                                                        <span>
+                                                            File Disabled
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>    </div>
+                        </div>          
+                          <div class="row">
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-midnight-bloom">
+                                    <div class="widget-content-wrapper text-white">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Total Drives</div>
+                                            <div class="widget-subheading">2021</div>
+                                        </div>
+                                        <div class="widget-content-right mx-3">
+                                            <div class="widget-numbers text-white"><span>67</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-arielle-smile">
+                                    <div class="widget-content-wrapper text-white">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Applied</div>
+                                            <div class="widget-subheading">for the drives</div>
+                                        </div>
+                                        <div class="widget-content-right mx-3">
+                                            <div class="widget-numbers text-white"><span>46</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-grow-early">
+                                    <div class="widget-content-wrapper text-white">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Followers</div>
+                                            <div class="widget-subheading">People Interested</div>
+                                        </div>
+                                        <div class="widget-content-right mx-3">
+                                            <div class="widget-numbers text-white"><span>46%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-xl-none d-lg-block col-md-6 col-xl-4">
+                                <div class="card mb-3 widget-content bg-premium-dark">
+                                    <div class="widget-content-wrapper text-white">
+                                        <div class="widget-content-left">
+                                            <div class="widget-heading">Products Sold</div>
+                                            <div class="widget-subheading">Revenue streams</div>
+                                        </div>
+                                        <div class="widget-content-right">
+                                            <div class="widget-numbers text-warning"><span>$14M</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12 col-lg-6">
+                                <div class="mb-3 d-flex justify-content-center align-items-center">
+        
+                                    <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 40rem;">
+                                        <div class="card-body">
+                            
+                                            <div class="row">
+                                                <div class="col-1">
+                                                    <img style="height:40px;width:40px;border-radius:100%;" src="data:image/jpeg;base64,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" alt="" srcset="">
+                                                </div>
+                                                <div class="col-10 d-flex justify-content-start align-items-center">
+                                                 <h6 style="font-weight:700; margin-left:7px;">Ms Dhoni</h6>
+                                                </div>
+                                                
+                            
+                                                <div class="col-1 d-flex justify-content-end">
+                                                    <div class="btn-group dropleft">
+                                                       
+                                                    <button type="button" class="btn"type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                                            class="bi bi-three-dots" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                                        </svg></button>
+                            
+                                                        <div class="dropdown-menu dropdown-menu1"aria-labelledby="dropdownMenuButton">
+                                                          <div class="row"> 
+                                                              <div class="col-12 d-flex justify-content-center">
+                                                              <a class="dropdown-item" style="font-size:12px;" href="#">Share &nbsp;<svg xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor"
+                                                                class="mercado-match" width="14" height="14" focusable="false">
+                                                                <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                                                            </svg></a>
+                                                              </div>
+                                                              
+                                                            </div> 
+                            
+                                                            <div class="row"> 
+                                                                <div class="col-12 d-flex justify-content-center">
+                                                                    <a class="dropdown-item"style="font-size:12px;" href="#">Save &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                                                        class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                                    </svg></a>
+                                                                </div>
+                                                                
+                                                              </div> 
+                            
+                                                              <div class="row"> 
+                                                                <div class="col-12 d-flex justify-content-center">
+                                                                      
+                                                            <a class="dropdown-item" style="font-size:12px;" href="#">Apply&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                                              </svg></a>
+                                                                </div>
+                                                                
+                                                              </div> 
+                                                        
+                                                          </div>
+                                                        </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title"style="display:inline-block;">Job Title :</h5><h6 style="display:inline-block;"> &nbsp;Full stack Devepoer</h6>
+                                                    <h6 class="card-title">job description :</h6>
+                                                    <p class="card-text"style="display:inline-block;">&nbsp;Some quick example text to build on the card title and make up the bulk of
+                                                        the card's content.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/avatars/post_img.png" class="card-img-top" alt="Post">
+                                        <div class="card-body">
+                            
+                                            <div class="row">
+                                                <div class="col-10 h-flex justify-content-center">
+                                                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                            
+                                                        <button type="button" class="btn btn-light likebtn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                                class="bi bi-suit-heart" viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                                                            </svg></button>
+                                                        <button type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-right"
+                                                                viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M14.854 4.854a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 4H3.5A2.5 2.5 0 0 0 1 6.5v8a.5.5 0 0 0 1 0v-8A1.5 1.5 0 0 1 3.5 5h9.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4z" />
+                                                            </svg></button>
+                                                        <button type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor"
+                                                                class="mercado-match" width="24" height="24" focusable="false">
+                                                                <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                                                            </svg></button>
+                                                            <button type="button" class="btn bookmarkbtn">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                                    class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                                </svg>
+                                                            </button>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="col-2 h-flex justify-content-end"> 
+                                                    <button type="button" class="btn Applybtn"style="background-color:#238d4a;color:white;border-radius:7px">
+                                                        Apply
+                                                    </button>
+                                                </div>
+                                                
+                            
+                                            </div>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            
+                            </div>
+
+                             <div class="col-md-12 col-lg-6">
+                                <div class="mb-3 d-flex justify-content-center align-items-center">
+        
+                                    <div class="card shadow p-3 mb-5 bg-body rounded" style="width: 40rem;">
+                                        <div class="card-body">
+                            
+                                            <div class="row">
+                                                <div class="col-1">
+                                                    <img style="height:40px;width:40px;border-radius:100%;" src="data:image/jpeg;base64,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" alt="" srcset="">
+                                                </div>
+                                                <div class="col-10 d-flex justify-content-start align-items-center">
+                                                 <h6 style="font-weight:700; margin-left:7px;">Ms Dhoni</h6>
+                                                </div>
+                                                
+                            
+                                                <div class="col-1 d-flex justify-content-end">
+                                                    <div class="btn-group dropleft">
+                                                       
+                                                    <button type="button" class="btn"type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                        
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                                            class="bi bi-three-dots" viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                                                        </svg></button>
+                            
+                                                        <div class="dropdown-menu dropdown-menu1"aria-labelledby="dropdownMenuButton">
+                                                          <div class="row"> 
+                                                              <div class="col-12 d-flex justify-content-center">
+                                                              <a class="dropdown-item" style="font-size:12px;" href="#">Share &nbsp;<svg xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor"
+                                                                class="mercado-match" width="14" height="14" focusable="false">
+                                                                <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                                                            </svg></a>
+                                                              </div>
+                                                              
+                                                            </div> 
+                            
+                                                            <div class="row"> 
+                                                                <div class="col-12 d-flex justify-content-center">
+                                                                    <a class="dropdown-item"style="font-size:12px;" href="#">Save &nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                                                        class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                                    </svg></a>
+                                                                </div>
+                                                                
+                                                              </div> 
+                            
+                                                              <div class="row"> 
+                                                                <div class="col-12 d-flex justify-content-center">
+                                                                      
+                                                            <a class="dropdown-item" style="font-size:12px;" href="#">Apply&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+                                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+                                                              </svg></a>
+                                                                </div>
+                                                                
+                                                              </div> 
+                                                        
+                                                          </div>
+                                                        </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <h5 class="card-title"style="display:inline-block;">Job Title :</h5><h6 style="display:inline-block;"> &nbsp;Full stack Devepoer</h6>
+                                                    <h6 class="card-title">job description :</h6>
+                                                    <p class="card-text"style="display:inline-block;">&nbsp;Some quick example text to build on the card title and make up the bulk of
+                                                        the card's content.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <img src="./assets/images/avatars/post_img.png" class="card-img-top" alt="Post">
+                                        <div class="card-body">
+                            
+                                            <div class="row">
+                                                <div class="col-10 h-flex justify-content-center">
+                                                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                            
+                                                        <button type="button" class="btn btn-light likebtn">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                                class="bi bi-suit-heart" viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z" />
+                                                            </svg></button>
+                                                        <button type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                width="16" height="16" fill="currentColor" class="bi bi-arrow-90deg-right"
+                                                                viewBox="0 0 16 16">
+                                                                <path fill-rule="evenodd"
+                                                                    d="M14.854 4.854a.5.5 0 0 0 0-.708l-4-4a.5.5 0 0 0-.708.708L13.293 4H3.5A2.5 2.5 0 0 0 1 6.5v8a.5.5 0 0 0 1 0v-8A1.5 1.5 0 0 1 3.5 5h9.793l-3.147 3.146a.5.5 0 0 0 .708.708l4-4z" />
+                                                            </svg></button>
+                                                        <button type="button" class="btn btn-light"><svg xmlns="http://www.w3.org/2000/svg"
+                                                                viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor"
+                                                                class="mercado-match" width="24" height="24" focusable="false">
+                                                                <path d="M21 3L0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"></path>
+                                                            </svg></button>
+                                                            <button type="button" class="btn bookmarkbtn">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                                    class="bi bi-bookmark" viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z" />
+                                                                </svg>
+                                                            </button>
+                                                    </div>
+                                                </div>
+                            
+                                                <div class="col-2 h-flex justify-content-end"> 
+                                                    <button type="button" class="btn Applybtn"style="background-color:#238d4a;color:white;border-radius:7px">
+                                                        Apply
+                                                    </button>
+                                                </div>
+                                                
+                            
+                                            </div>
+                                        </div>
+                            
+                                    </div>
+                                </div>
+                            
+                            </div>
+                           
+                        </div>
+                       
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="main-card mb-3 card">
+                                    <div class="card-header">Active Users
+                                        <div class="btn-actions-pane-right">
+                                            <div role="group" class="btn-group-sm btn-group">
+                                                <button class="active btn btn-focus">Last Week</button>
+                                                <button class="btn btn-focus">All Month</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="table-responsive">
+                                        <table class="align-middle mb-0 table table-borderless table-striped table-hover">
+                                            <thead>
+                                            <tr>
+                                                <th class="text-center">#</th>
+                                                <th>Name</th>
+                                                <th class="text-center">City</th>
+                                                <th class="text-center">Status</th>
+                                                <th class="text-center">Actions</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="text-center text-muted">#345</td>
+                                                <td>
+                                                    <div class="widget-content p-0">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-left mr-3">
+                                                                <div class="widget-content-left">
+                                                                    <img width="40" class="rounded-circle" src="assets/images/avatars/4.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="widget-content-left flex2">
+                                                                <div class="widget-heading">John Doe</div>
+                                                                <div class="widget-subheading opacity-7">Web Developer</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-center">Madrid</td>
+                                                <td class="text-center">
+                                                    <div class="badge badge-warning">Pending</div>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" id="PopoverCustomT-1" class="btn btn-primary btn-sm">Details</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center text-muted">#347</td>
+                                                <td>
+                                                    <div class="widget-content p-0">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-left mr-3">
+                                                                <div class="widget-content-left">
+                                                                    <img width="40" class="rounded-circle" src="assets/images/avatars/3.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="widget-content-left flex2">
+                                                                <div class="widget-heading">Ruben Tillman</div>
+                                                                <div class="widget-subheading opacity-7">Etiam sit amet orci eget</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-center">Berlin</td>
+                                                <td class="text-center">
+                                                    <div class="badge badge-success">Completed</div>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" id="PopoverCustomT-2" class="btn btn-primary btn-sm">Details</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center text-muted">#321</td>
+                                                <td>
+                                                    <div class="widget-content p-0">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-left mr-3">
+                                                                <div class="widget-content-left">
+                                                                    <img width="40" class="rounded-circle" src="assets/images/avatars/2.jpg" alt="">
+                                                                </div>
+                                                            </div>
+                                                            <div class="widget-content-left flex2">
+                                                                <div class="widget-heading">Elliot Huber</div>
+                                                                <div class="widget-subheading opacity-7">Lorem ipsum dolor sic</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-center">London</td>
+                                                <td class="text-center">
+                                                    <div class="badge badge-danger">In Progress</div>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" id="PopoverCustomT-3" class="btn btn-primary btn-sm">Details</button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center text-muted">#55</td>
+                                                <td>
+                                                    <div class="widget-content p-0">
+                                                        <div class="widget-content-wrapper">
+                                                            <div class="widget-content-left mr-3">
+                                                                <div class="widget-content-left">
+                                                                    <img width="40" class="rounded-circle" src="assets/images/avatars/1.jpg" alt=""></div>
+                                                            </div>
+                                                            <div class="widget-content-left flex2">
+                                                                <div class="widget-heading">Vinnie Wagstaff</div>
+                                                                <div class="widget-subheading opacity-7">UI Designer</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td class="text-center">Amsterdam</td>
+                                                <td class="text-center">
+                                                    <div class="badge badge-info">On Hold</div>
+                                                </td>
+                                                <td class="text-center">
+                                                    <button type="button" id="PopoverCustomT-4" class="btn btn-primary btn-sm">Details</button>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="d-block text-center card-footer">
+                                        <button class="mr-2 btn-icon btn-icon-only btn btn-outline-danger"><i class="pe-7s-trash btn-icon-wrapper"> </i></button>
+                                        <button class="btn-wide btn btn-success">Save</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card-shadow-danger mb-3 widget-chart widget-chart2 text-left card">
+                                    <div class="widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left pr-2 fsize-1">
+                                                    <div class="widget-numbers mt-0 fsize-3 text-danger">71%</div>
+                                                </div>
+                                                <div class="widget-content-right w-100">
+                                                    <div class="progress-bar-xs progress">
+                                                        <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="71" aria-valuemin="0" aria-valuemax="100" style="width: 71%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left fsize-1">
+                                                <div class="text-muted opacity-6">Income Target</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card-shadow-success mb-3 widget-chart widget-chart2 text-left card">
+                                    <div class="widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left pr-2 fsize-1">
+                                                    <div class="widget-numbers mt-0 fsize-3 text-success">54%</div>
+                                                </div>
+                                                <div class="widget-content-right w-100">
+                                                    <div class="progress-bar-xs progress">
+                                                        <div class="progress-bar bg-success" role="progressbar" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100" style="width: 54%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left fsize-1">
+                                                <div class="text-muted opacity-6">Expenses Target</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card-shadow-warning mb-3 widget-chart widget-chart2 text-left card">
+                                    <div class="widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left pr-2 fsize-1">
+                                                    <div class="widget-numbers mt-0 fsize-3 text-warning">32%</div>
+                                                </div>
+                                                <div class="widget-content-right w-100">
+                                                    <div class="progress-bar-xs progress">
+                                                        <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="32" aria-valuemin="0" aria-valuemax="100" style="width: 32%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left fsize-1">
+                                                <div class="text-muted opacity-6">Spendings Target</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3">
+                                <div class="card-shadow-info mb-3 widget-chart widget-chart2 text-left card">
+                                    <div class="widget-content">
+                                        <div class="widget-content-outer">
+                                            <div class="widget-content-wrapper">
+                                                <div class="widget-content-left pr-2 fsize-1">
+                                                    <div class="widget-numbers mt-0 fsize-3 text-info">89%</div>
+                                                </div>
+                                                <div class="widget-content-right w-100">
+                                                    <div class="progress-bar-xs progress">
+                                                        <div class="progress-bar bg-info" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100" style="width: 89%;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="widget-content-left fsize-1">
+                                                <div class="text-muted opacity-6">Totals Target</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app-wrapper-footer">
+                        <div class="app-footer">
+                            <div class="app-footer__inner">
+                                <div class="app-footer-left">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a href="javascript:void(0);" class="nav-link">
+                                                Footer Link 1
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:void(0);" class="nav-link">
+                                                Footer Link 2
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="app-footer-right">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a href="javascript:void(0);" class="nav-link">
+                                                Footer Link 3
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="javascript:void(0);" class="nav-link">
+                                                <div class="badge badge-success mr-1 ml-0">
+                                                    <small>NEW</small>
+                                                </div>
+                                                Footer Link 4
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    </div>
+                <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        </div>
+    </div>
+<script type="text/javascript" src="./assets/scripts/main.js"></script>
+
+
+</body>
+</html>
